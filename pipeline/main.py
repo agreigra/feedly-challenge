@@ -43,8 +43,11 @@ def main(fileName, n):
     df = read_dataset(fileName)
     df["tokens"] = df["content"].apply(lambda s: text2tokens(s))
     G = create_graph(df, n)
-    print(G.connected_components())
-
+    connected_components = G.connected_components()
+    for component in  connected_components:
+	    print(component)
+	    print("--------------------")
+    
 
 
 if __name__ == "__main__":

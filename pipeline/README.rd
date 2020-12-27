@@ -31,7 +31,7 @@ To use this project, you have to create a virtual enviroment and install the req
 The test directory contains unit tests, to run one of them, use the commandes
     > python3 -m unittest test_graph.py
 
-To use the code run the following commande:
+To run the code following commande:
     > python3 main.py datasetName.pickle n
 
-Note: n the minimum number of tokens shared between two nodes to have an edge between them
+Note: n the minimum number of tokens shared between two nodes to be considered connected
